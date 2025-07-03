@@ -35,7 +35,7 @@ export default function Home() {
               rel="noopener noreferrer"
               title="Book a table at Monroe Zürich"
             >
-              Reserve a Table
+              Reservations
             </a>
           </li>
           <li>
