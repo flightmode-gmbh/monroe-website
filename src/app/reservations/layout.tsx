@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Book your table at Monroe Bar, Zürich’s favorite karaoke bar in Kreis 4. Enjoy unforgettable nights with live karaoke, signature cocktails, and delicious bites.",
 }
 
-export default function RootLayout({
+export default function ReservationLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
