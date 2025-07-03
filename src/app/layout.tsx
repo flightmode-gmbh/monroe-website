@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
   description:
-    "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails and tasty bites, located in the heart of Zürich.",
+    "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
 }
 
 export default function RootLayout({

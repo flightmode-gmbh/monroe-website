@@ -19,7 +19,7 @@ export default function Home() {
       <p className="sr-only">
         Experience Monroe Zürich, a vibrant karaoke bar located in the heart of
         Kreis 4. Enjoy unforgettable nights with live karaoke, handcrafted
-        cocktails, delicious bites, and a buzzing crowd. Whether you're
+        cocktails, delicious bites, and a buzzing crowd. Whether you&apos;re
         celebrating with friends or just dropping by, Monroe Zürich offers the
         perfect mix of music, drinks, and energy in one of Zurich’s liveliest
         neighborhoods.
