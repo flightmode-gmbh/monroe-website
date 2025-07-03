@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff7e7;
+  --foreground: #F0866D;
 }
 
 @theme inline {
@@ -12,15 +12,108 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
 }
 
+/* Set body full height and flex for vertical layout */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
+
+.logo{
+  padding: 10px
+}
+
+/* Navigation bar styling */
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #59B073;
+  text-decoration: none;
+}
+
+
+/* Video section styling */
+.video-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-video {
+  width: 50%;
+  height: auto;
+}
+
+/* Footer styling */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+.OH{
+    font-weight: 1000;
+}
+/* Make layout responsive for mobile devices */
+@media (max-width: 768px) {
+    /* Reduce logo size for smaller screens */
+    .logo img {
+      width: 200px;
+      margin: 10px 0 0 10px;
+    }
+
+  
+    /* Stack navigation items vertically for mobile */
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    /* Reduce video size for mobile screens */
+    .center-video {
+      width: 90%; /* Make the video take up most of the screen width */
+    }
+  
+    /* Adjust footer for small screens */
+    .footer {
+      width: 100%; /* Footer spans full width on mobile */
+      padding: 10px;
+      text-align: left;
+    }
+  }
