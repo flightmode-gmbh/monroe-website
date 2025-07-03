@@ -51,7 +51,7 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body className={`antialiased`}>
+      <body className={`antialiased `}>
         <h1 className="sr-only">
           Monroe Zürich – Karaoke Bar with Cocktails, Bites & Nightlife in
           Zürich
