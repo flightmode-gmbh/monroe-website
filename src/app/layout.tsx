@@ -3,7 +3,6 @@ import Image from "next/image"
 
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -79,8 +78,6 @@ export default function RootLayout({
         <Navigation />
 
         {children}
-
-        <Footer />
       </body>
     </html>
   )
