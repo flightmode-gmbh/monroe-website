@@ -6,6 +6,12 @@ export const metadata: Metadata = {
     "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
   description:
     "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
+  manifest: "/manifest.json",
+  themeColor: "#000000",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 }
 
 export default function RootLayout({
