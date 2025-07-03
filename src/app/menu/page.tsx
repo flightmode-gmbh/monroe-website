@@ -7,7 +7,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 max-w-xl">
           <Image
             src="/docs/menu-front.png"
-            alt="Image 1"
+            alt="Front page of Monroe Zürich menu featuring signature cocktails, mocktails, beers and house drinks"
             width={800}
             height={600}
             className="w-full h-auto object-cover"
@@ -16,7 +16,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 max-w-xl">
           <Image
             src="/docs/menu-back.png"
-            alt="Image 2"
+            alt="Back page of Monroe Zürich menu showcasing shots, wines and bubbles"
             width={800}
             height={600}
             className="w-full h-auto object-cover"
