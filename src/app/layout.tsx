@@ -1,5 +1,10 @@
 import type { Metadata } from "next"
+import Image from "next/image"
+
 import "./globals.css"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title:
@@ -47,7 +52,36 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <h1 className="sr-only">
+          Monroe Zürich – Karaoke Bar with Cocktails, Bites & Nightlife in
+          Zürich
+        </h1>
+        <p className="sr-only">
+          Experience Monroe Zürich, a vibrant karaoke bar located in the heart
+          of Kreis 4. Enjoy unforgettable nights with live karaoke, handcrafted
+          cocktails, delicious bites, and a buzzing crowd. Whether you&apos;re
+          celebrating with friends or just dropping by, Monroe Zürich offers the
+          perfect mix of music, drinks, and energy in one of Zurich’s liveliest
+          neighborhoods.
+        </p>
+        <header className="logo">
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Monroe Zürich Logo – Karaoke Bar in Zürich"
+              width={240}
+              height={80} // Suggest increasing this from 10 for visibility
+              priority
+            />
+          </Link>
+        </header>
+        <Navigation />
+
+        {children}
+
+        <Footer />
+      </body>
     </html>
   )
 }

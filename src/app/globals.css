@@ -11,21 +11,23 @@
 }
 
 /* Reset margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
+/* * {
   box-sizing: border-box;
   color: var(--color-foreground);
   background-color: var(--color-background);
-}
+} */
 
 /* Set body full height and flex for vertical layout */
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  box-sizing: border-box;
 }
 
 .logo{
