@@ -32,6 +32,9 @@ export const Navigation = () => {
             Find Us
           </a>
         </li>
+        <li>
+          <Link href={"/menu"}>Menu</Link>
+        </li>
       </ul>
     </nav>
   )
