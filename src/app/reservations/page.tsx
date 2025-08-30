@@ -18,7 +18,7 @@ export default function ReservationPage() {
 
         <div className="flex flex-col sm:flex-row sm:justify-center gap-4 mt-8">
           <a
-            href="https://mytools.aleno.me/reservations/v2.0/reservations.html?k=..."
+            href="https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJyIjoibmh1M2JHN2hmYXBCdFJwQTQiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9"
             target="_blank"
             rel="noopener noreferrer"
           >
