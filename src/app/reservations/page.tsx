@@ -49,8 +49,8 @@ export default function ReservationPage() {
               welcome@monroe.zuerich
             </a>
             <br className="sm:hidden" /> or call{" "}
-            <a href="tel:+41441234567" className="underline hover:text-black">
-              +41 44 123 45 67
+            <a href="tel:+41774042328" className="underline hover:text-black">
+              +41 77 404 23 28
             </a>
             .
           </p>
