@@ -3,15 +3,16 @@ import clsx from "clsx"
 
 type ButtonProps = {
   children: ReactNode
-  variant?: "primary" | "secondary"
+  variant?: "primary" | "secondary" | "light"
   className?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 const styles = {
   base: "px-6 py-3 rounded text-sm sm:text-base font-medium transition-colors duration-200 cursor-pointer",
   variants: {
-    primary: "bg-black text-white bg-foreground text-background",
+    primary: "bg-foreground text-background",
     secondary: "bg-transparent border border-foreground text-foreground",
+    light: "bg-transparent border border-white text-white hover:bg-white/10",
   },
 }
 

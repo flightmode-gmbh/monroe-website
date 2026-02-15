@@ -51,7 +51,7 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body className={`antialiased `}>
+      <body className="antialiased">
         <h1 className="sr-only">
           Monroe Zürich – Karaoke Bar with Cocktails, Bites & Nightlife in
           Zürich
@@ -70,7 +70,7 @@ export default function RootLayout({
               src="/logo.png"
               alt="Monroe Zürich Logo – Karaoke Bar in Zürich"
               width={240}
-              height={80} // Suggest increasing this from 10 for visibility
+              height={80}
               priority
             />
           </Link>

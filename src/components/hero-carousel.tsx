@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react"
 import Image from "next/image"
+import clsx from "clsx"
 
 const slides = [
   {
@@ -46,22 +47,33 @@ export function HeroCarousel() {
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const touchStartRef = useRef<number>(0)
 
   const goTo = useCallback((index: number) => {
     setCurrent((index + slides.length) % slides.length)
   }, [])
 
+  const scheduleResume = useCallback(() => {
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current)
+    resumeTimerRef.current = setTimeout(() => setPaused(false), 8000)
+  }, [])
+
   // Auto-advance
   useEffect(() => {
     if (paused) return
-    timeoutRef.current = setTimeout(() => {
-      goTo(current + 1)
-    }, 5000)
+    timeoutRef.current = setTimeout(() => goTo(current + 1), 5000)
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current)
     }
   }, [current, paused, goTo])
+
+  // Clean up resume timer on unmount
+  useEffect(() => {
+    return () => {
+      if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current)
+    }
+  }, [])
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setPaused(true)
@@ -73,8 +85,7 @@ export function HeroCarousel() {
     if (Math.abs(diff) > 50) {
       goTo(diff > 0 ? current + 1 : current - 1)
     }
-    // Resume auto-advance after 8 seconds of inactivity
-    setTimeout(() => setPaused(false), 8000)
+    scheduleResume()
   }
 
   return (
@@ -89,7 +100,7 @@ export function HeroCarousel() {
       {slides.map((slide, i) => (
         <div
           key={slide.src}
-          className={`carousel-slide ${i === current ? "carousel-slide-active" : ""}`}
+          className={clsx("carousel-slide", i === current && "carousel-slide-active")}
           aria-hidden={i !== current}
         >
           <Image
@@ -112,11 +123,11 @@ export function HeroCarousel() {
         {slides.map((_, i) => (
           <button
             key={i}
-            className={`carousel-dot ${i === current ? "carousel-dot-active" : ""}`}
+            className={clsx("carousel-dot", i === current && "carousel-dot-active")}
             onClick={() => {
               goTo(i)
               setPaused(true)
-              setTimeout(() => setPaused(false), 8000)
+              scheduleResume()
             }}
             role="tab"
             aria-selected={i === current}
