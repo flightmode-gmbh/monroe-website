@@ -11,7 +11,7 @@ export default function ReservationPage() {
       >
         <div className="absolute inset-0 bg-black/65" />
 
-        <div className="relative z-10 max-w-xl w-full mx-auto px-6">
+        <div className="relative z-10 max-w-xl w-full mx-auto px-6 mt-16 sm:mt-0">
           {/* Card */}
           <div className="backdrop-blur-md bg-black/30 border border-white/10 rounded-2xl px-8 py-12 sm:px-12 sm:py-16 text-center">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50 mb-4">
