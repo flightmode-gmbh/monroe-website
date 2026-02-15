@@ -34,7 +34,7 @@ export default function ReservationLayout({
           },
           url: "https://monroe.zuerich/reservation",
           telephone: "+41 44 123 45 67",
-          openingHours: ["We-Sa 17:00-02:00"],
+          openingHours: ["Th-Sa 19:00-02:00"],
           servesCuisine: "Bar food",
           acceptsReservations: true,
           sameAs: ["https://www.instagram.com/monroe.zuerich/"],
