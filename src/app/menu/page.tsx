@@ -24,7 +24,7 @@ export default function MenuPage() {
   }, [lightbox, closeLightbox])
 
   return (
-    <>
+    <div className="bg-[#1a1a1a]">
       {/* Hero background */}
       <main
         className="relative w-full min-h-screen flex flex-col items-center bg-cover bg-center"
@@ -128,6 +128,6 @@ export default function MenuPage() {
           />
         </div>
       )}
-    </>
+    </div>
   )
 }
