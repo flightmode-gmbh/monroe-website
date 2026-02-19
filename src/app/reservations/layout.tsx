@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Book your table at Monroe Bar, Zürich's favorite karaoke bar in Kreis 4. Enjoy unforgettable nights with live karaoke, signature cocktails, and delicious bites.",
   alternates: {
-    canonical: "https://monroe.zuerich/reservations",
+    canonical: "https://www.monroe.zuerich/reservations",
   },
   openGraph: {
-    url: "https://monroe.zuerich/reservations",
+    url: "https://www.monroe.zuerich/reservations",
     title: "Reserve at Monroe Bar Zürich – Karaoke, Cocktails & Bites",
     description:
       "Book your table at Monroe Bar, Zürich's favorite karaoke bar in Kreis 4. Enjoy unforgettable nights with live karaoke, signature cocktails, and delicious bites.",
@@ -32,11 +32,11 @@ export default function ReservationLayout({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BarOrPub",
-          "@id": "https://monroe.zuerich/#bar",
+          "@id": "https://www.monroe.zuerich/#bar",
           name: "Monroe Zürich",
           description:
             "Reserve your table at Monroe Bar – Zürich's go-to karaoke bar with cocktails and bites in Kreis 4.",
-          image: "https://monroe.zuerich/logo.png",
+          image: "https://www.monroe.zuerich/logo.png",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Brauerstrasse 26",
@@ -44,7 +44,7 @@ export default function ReservationLayout({
             postalCode: "8004",
             addressCountry: "CH",
           },
-          url: "https://monroe.zuerich",
+          url: "https://www.monroe.zuerich",
           telephone: "+41 77 404 23 28",
           openingHours: ["Th-Sa 19:00-02:00"],
           servesCuisine: "Fried Chicken, Nachos, Bar Bites",
@@ -54,7 +54,7 @@ export default function ReservationLayout({
             "@type": "ReserveAction",
             target: {
               "@type": "EntryPoint",
-              urlTemplate: "https://monroe.zuerich/reservations",
+              urlTemplate: "https://www.monroe.zuerich/reservations",
               inLanguage: "en",
               actionPlatform: [
                 "http://schema.org/DesktopWebPlatform",

@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and food by Yardbird — crispy chicken bites, fried chicken burgers, nachos, and more. Located in Kreis 4.",
   alternates: {
-    canonical: "https://monroe.zuerich/menu",
+    canonical: "https://www.monroe.zuerich/menu",
   },
   openGraph: {
-    url: "https://monroe.zuerich/menu",
+    url: "https://www.monroe.zuerich/menu",
     title: "Monroe Zürich Menu – Cocktails, Drinks & Bites",
     description:
       "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and food by Yardbird — crispy chicken bites, fried chicken burgers, nachos, and more. Located in Kreis 4.",
@@ -63,7 +63,7 @@ export default function MenuLayout({
           ],
           provider: {
             "@type": "BarOrPub",
-            "@id": "https://monroe.zuerich/#bar",
+            "@id": "https://www.monroe.zuerich/#bar",
             name: "Monroe Zürich",
           },
         })}

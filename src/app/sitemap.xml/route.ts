@@ -1,5 +1,5 @@
 export function GET() {
-  const baseUrl = "https://monroe.zuerich"
+  const baseUrl = "https://www.monroe.zuerich"
   const pages = [
     { path: "", lastmod: "2026-02-19" },
     { path: "/menu", lastmod: "2026-02-19" },

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Find answers to common questions about Monroe Bar Zürich: opening hours, reservations, location, events, accessibility, and more.",
   alternates: {
-    canonical: "https://monroe.zuerich/faq",
+    canonical: "https://www.monroe.zuerich/faq",
   },
   openGraph: {
-    url: "https://monroe.zuerich/faq",
+    url: "https://www.monroe.zuerich/faq",
     title: "FAQ – Monroe Zürich | Frequently Asked Questions",
     description:
       "Find answers to common questions about Monroe Bar Zürich: opening hours, reservations, location, events, accessibility, and more.",

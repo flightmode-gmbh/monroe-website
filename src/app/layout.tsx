@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   alternates: {
-    canonical: "https://monroe.zuerich/",
+    canonical: "https://www.monroe.zuerich/",
   },
   openGraph: {
     type: "website",
     locale: "en_CH",
-    url: "https://monroe.zuerich/",
+    url: "https://www.monroe.zuerich/",
     siteName: "Monroe Zürich",
     title:
       "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
     images: [
       {
-        url: "https://monroe.zuerich/og-image.png",
+        url: "https://www.monroe.zuerich/og-image.png",
         width: 1200,
         height: 630,
         alt: "Monroe Zürich – Karaoke Bar in Kreis 4, Zürich",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
     description:
       "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
-    images: ["https://monroe.zuerich/og-image.png"],
+    images: ["https://www.monroe.zuerich/og-image.png"],
   },
 }
 
@@ -61,11 +61,11 @@ export default function RootLayout({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BarOrPub",
-            "@id": "https://monroe.zuerich/#bar",
+            "@id": "https://www.monroe.zuerich/#bar",
             name: "Monroe Zürich",
             description:
               "Monroe Zürich is a karaoke bar in Kreis 4, Zürich, offering live karaoke nights, craft cocktails, and Southern Fried Chicken bites by Yardbird. Open Thursday to Saturday.",
-            image: "https://monroe.zuerich/logo.png",
+            image: "https://www.monroe.zuerich/logo.png",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Brauerstrasse 26",
@@ -78,7 +78,7 @@ export default function RootLayout({
               latitude: 47.3769,
               longitude: 8.5269,
             },
-            url: "https://monroe.zuerich",
+            url: "https://www.monroe.zuerich",
             telephone: "+41 77 404 23 28",
             openingHours: ["Th-Sa 19:00-02:00"],
             servesCuisine: "Fried Chicken, Nachos, Bar Bites",
@@ -108,7 +108,7 @@ export default function RootLayout({
             sameAs: ["https://www.instagram.com/monroe.zuerich/"],
             hasMenu: {
               "@type": "Menu",
-              url: "https://monroe.zuerich/menu",
+              url: "https://www.monroe.zuerich/menu",
             },
           })}
         </script>
