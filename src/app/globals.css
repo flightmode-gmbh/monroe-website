@@ -218,6 +218,26 @@ body {
   color: rgba(255, 255, 255, 0.85);
 }
 
+.hours-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #59B073;
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(89, 176, 115, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 0 6px rgba(89, 176, 115, 0);
+  }
+}
+
 /* Hero carousel */
 .carousel {
   position: relative;

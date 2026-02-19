@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import { OpenStatus } from "./open-status"
 
 type FooterProps = {
   variant?: "overlay" | "inline"
@@ -44,11 +45,7 @@ export const Footer = ({ variant = "overlay" }: FooterProps) => {
         </a>
       )}
       <div className={isInline ? "" : "footer-hours"}>
-        <p className="hours-line">
-          <span className="hours-label">Open</span>
-          <span className="hours-sep">&#8212;</span>
-          <span className="hours-value">Thu&ndash;Sat from 19h till late</span>
-        </p>
+        <OpenStatus />
       </div>
     </footer>
   )
