@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
+  alternates: {
+    canonical: "https://monroe.zuerich/",
+  },
 }
 
 export default function RootLayout({
@@ -28,13 +31,14 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://monroe.zuerich/" />
-
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BarOrPub",
+            "@id": "https://monroe.zuerich/#bar",
             name: "Monroe Zürich",
+            description:
+              "Monroe Zürich is a karaoke bar in Kreis 4, Zürich, offering live karaoke nights, craft cocktails, and Southern Fried Chicken bites by Yardbird. Open Thursday to Saturday.",
             image: "https://monroe.zuerich/logo.png",
             address: {
               "@type": "PostalAddress",
@@ -43,11 +47,43 @@ export default function RootLayout({
               postalCode: "8004",
               addressCountry: "CH",
             },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 47.3769,
+              longitude: 8.5269,
+            },
             url: "https://monroe.zuerich",
-            telephone: "+41 44 123 45 67",
+            telephone: "+41 77 404 23 28",
             openingHours: ["Th-Sa 19:00-02:00"],
-            servesCuisine: "Southern Fried Chicken, Bar Bites",
+            servesCuisine: "Fried Chicken, Nachos, Bar Bites",
+            priceRange: "$$",
+            paymentAccepted: "Credit Card, TWINT",
+            currenciesAccepted: "CHF",
+            acceptsReservations: true,
+            amenityFeature: [
+              {
+                "@type": "LocationFeatureSpecification",
+                name: "Live Karaoke",
+                value: true,
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                name: "Outdoor Seating",
+                value: true,
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                name: "Private Events",
+                value: true,
+              },
+            ],
+            keywords:
+              "karaoke bar, karaoke Zürich, karaoke bar Zürich, cocktails, nightlife Kreis 4, live karaoke, fried chicken Zürich",
             sameAs: ["https://www.instagram.com/monroe.zuerich/"],
+            hasMenu: {
+              "@type": "Menu",
+              url: "https://monroe.zuerich/menu",
+            },
           })}
         </script>
       </head>

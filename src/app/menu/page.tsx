@@ -129,7 +129,7 @@ export default function MenuPage() {
               <div className="relative w-full aspect-[16/9]">
                 <Image
                   src="/assets/monroe-yardbird-wings.jpg"
-                  alt="Crispy buttermilk fried chicken wings by Yardbird, served at Monroe Zürich"
+                  alt="Crispy fried chicken bites and nachos by Yardbird, served at Monroe Zürich"
                   fill
                   sizes="(max-width: 768px) 100vw, 720px"
                   style={{ objectFit: "cover" }}
@@ -146,7 +146,7 @@ export default function MenuPage() {
                   Southern Fried Chicken &amp; Bites
                 </h2>
                 <p className="text-sm sm:text-[0.95rem] text-white/60 leading-relaxed mb-4">
-                  Monroe&apos;s food corner is served by{" "}
+                  Monroe&apos;s food corner is powered by{" "}
                   <a
                     href="https://yardbird.ch"
                     target="_blank"
@@ -155,19 +155,17 @@ export default function MenuPage() {
                   >
                     Yardbird
                   </a>
-                  , Zürich&apos;s original Southern Fried Chicken restaurant. Their 100% Swiss-sourced
-                  chicken is brined for 24 hours in buttermilk, coated in an aromatic spice mix, and
-                  double-fried to crispy perfection.
+                  , Zürich&apos;s original Southern Fried Chicken restaurant. Dig into crispy chicken
+                  bites, crispy chicken skins, a loaded fried chicken burger, cheesy nachos, and more.
                 </p>
                 <p className="text-sm sm:text-[0.95rem] text-white/60 leading-relaxed mb-6">
-                  Choose from signature styles like Classic, Nashville Hot, Buffalo, Seoul, and BBQ — available
-                  as wings or half chicken. Vegetarian and vegan options are available with Planted&trade; chicken,
-                  and the fried chicken is completely gluten-free.
+                  Go all in with the Monroe Platter — skins, loaded fries, 18 mixed wings, and nachos
+                  guacamole for the whole crew. Planted™ chicken available for a vegetarian or vegan option.
                 </p>
 
                 {/* Highlights */}
                 <div className="flex flex-wrap gap-2">
-                  {["Swiss Chicken", "Gluten-Free", "Vegan Options", "24h Buttermilk Brine"].map((tag) => (
+                  {["Fried Chicken", "Nachos", "Burgers", "Vegan Options"].map((tag) => (
                     <span
                       key={tag}
                       className="text-[0.65rem] uppercase tracking-[0.15em] text-white/40 border border-white/10 rounded-full px-3 py-1.5"

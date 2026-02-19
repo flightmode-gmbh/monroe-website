@@ -4,7 +4,7 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Monroe Zürich Menu – Cocktails, Drinks & Bites",
   description:
-    "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and Southern Fried Chicken by Yardbird — Zürich's original fried chicken restaurant. Located in Kreis 4.",
+    "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and food by Yardbird — crispy chicken bites, fried chicken burgers, nachos, and more. Located in Kreis 4.",
   alternates: {
     canonical: "https://monroe.zuerich/menu",
   },
@@ -41,28 +41,19 @@ export default function MenuLayout({
             },
             {
               "@type": "MenuSection",
-              name: "Yardbird Southern Fried Chicken",
+              name: "Food by Yardbird",
               description:
-                "Food by Yardbird — 100% Swiss-sourced buttermilk fried chicken, double-fried and gluten-free. Available in Classic, Nashville Hot, Buffalo, Seoul, and BBQ styles. Vegetarian and vegan options with Planted\u2122 chicken.",
+                "Food by Yardbird — chicken bites, crispy chicken skins, fried chicken burger & fries, cheesy nachos, loaded fries, and the Monroe Platter for groups. Planted™ chicken available as a vegetarian/vegan option.",
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
               },
             },
           ],
-          hasRestaurant: {
+          provider: {
             "@type": "BarOrPub",
+            "@id": "https://monroe.zuerich/#bar",
             name: "Monroe Zürich",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Brauerstrasse 26",
-              addressLocality: "Zürich",
-              postalCode: "8004",
-              addressCountry: "CH",
-            },
-            telephone: "+41 44 123 45 67",
-            url: "https://monroe.zuerich",
-            sameAs: ["https://www.instagram.com/monroe.zuerich/"],
           },
         })}
       </Script>

@@ -22,7 +22,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What type of cuisine does Monroe offer?",
     answer:
-      "Monroe's food corner is powered by Yardbird (yardbird.ch), Zürich's original Southern Fried Chicken restaurant. Enjoy 100% Swiss-sourced buttermilk fried chicken — double-fried, crispy, and gluten-free — in styles like Classic, Nashville Hot, Buffalo, and more.",
+      "Monroe's food corner is powered by Yardbird (yardbird.ch), Zürich's original Southern Fried Chicken restaurant. Enjoy crispy chicken bites, chicken skins, a fried chicken burger, cheesy nachos, and more — plus the Monroe Platter for groups of 6 or more.",
   },
   {
     question: "Is there a dress code?",
@@ -42,7 +42,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Do you have vegetarian or vegan options?",
     answer:
-      "Yes! All Yardbird dishes can be ordered as a vegetarian or vegan option with Planted™ chicken. Just ask our staff for recommendations.",
+      "Yes! Chicken bites can be ordered with Planted™ chicken as a vegetarian or vegan option. Just ask our staff for recommendations.",
   },
   {
     question: "What payment methods do you accept?",
