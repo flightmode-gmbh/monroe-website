@@ -18,7 +18,7 @@ export default function ReservationPage() {
               Reservations
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Your Night Starts Here
+              Reserve Your Karaoke Night
             </h1>
             <p className="text-white/70 text-base sm:text-lg mb-10 max-w-md mx-auto">
               Cocktails, karaoke, and good company — book your spot at Monroe
@@ -76,6 +76,15 @@ export default function ReservationPage() {
                 </Button>
               </Link>
             </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/menu"
+              className="text-sm text-white/50 underline underline-offset-4 hover:text-[#59B073] transition-colors"
+            >
+              See our menu &rarr;
+            </Link>
           </div>
         </div>
       </main>

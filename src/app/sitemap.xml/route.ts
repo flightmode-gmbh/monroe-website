@@ -1,21 +1,20 @@
 export function GET() {
   const baseUrl = "https://monroe.zuerich"
-  const now = new Date().toISOString()
   const pages = [
-    "",
-    "/menu",
-    "/reservations",
-    "/faq",
+    { path: "", lastmod: "2026-02-19" },
+    { path: "/menu", lastmod: "2026-02-19" },
+    { path: "/reservations", lastmod: "2026-02-19" },
+    { path: "/faq", lastmod: "2026-02-19" },
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map(
-    (path) => `
+    ({ path, lastmod }) => `
   <url>
     <loc>${baseUrl}${path}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${lastmod}</lastmod>
   </url>`
   )
   .join("")}

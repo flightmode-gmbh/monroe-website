@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://monroe.zuerich/reservations",
   },
+  openGraph: {
+    url: "https://monroe.zuerich/reservations",
+    title: "Reserve at Monroe Bar Zürich – Karaoke, Cocktails & Bites",
+    description:
+      "Book your table at Monroe Bar, Zürich's favorite karaoke bar in Kreis 4. Enjoy unforgettable nights with live karaoke, signature cocktails, and delicious bites.",
+  },
+  twitter: {
+    title: "Reserve at Monroe Bar Zürich – Karaoke, Cocktails & Bites",
+    description:
+      "Book your table at Monroe Bar, Zürich's favorite karaoke bar in Kreis 4. Live karaoke, signature cocktails, and delicious bites.",
+  },
 }
 
 export default function ReservationLayout({
@@ -21,6 +32,7 @@ export default function ReservationLayout({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BarOrPub",
+          "@id": "https://monroe.zuerich/#bar",
           name: "Monroe Zürich",
           description:
             "Reserve your table at Monroe Bar – Zürich's go-to karaoke bar with cocktails and bites in Kreis 4.",
@@ -32,8 +44,8 @@ export default function ReservationLayout({
             postalCode: "8004",
             addressCountry: "CH",
           },
-          url: "https://monroe.zuerich/reservations",
-          telephone: "+41 44 123 45 67",
+          url: "https://monroe.zuerich",
+          telephone: "+41 77 404 23 28",
           openingHours: ["Th-Sa 19:00-02:00"],
           servesCuisine: "Fried Chicken, Nachos, Bar Bites",
           acceptsReservations: true,

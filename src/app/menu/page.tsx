@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { Footer } from "@/components/footer"
 
 export default function MenuPage() {
@@ -34,6 +35,9 @@ export default function MenuPage() {
 
         {/* Content */}
         <div className="relative z-10 w-full flex flex-col items-center pt-28 sm:pt-36 md:pt-32 pb-16 px-4">
+          <h1 className="sr-only">
+            Monroe Zürich Menu – Cocktails, Drinks &amp; Bites
+          </h1>
           {/* Menu cards */}
           <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-10 max-w-5xl w-full">
             {/* Front */}
@@ -178,6 +182,15 @@ export default function MenuPage() {
             </div>
           </div>
         </section>
+        {/* CTA */}
+        <div className="relative z-10 pb-16 text-center">
+          <Link
+            href="/reservations"
+            className="text-sm text-white/50 underline underline-offset-4 hover:text-[#59B073] transition-colors"
+          >
+            Reserve a table &rarr;
+          </Link>
+        </div>
       </main>
 
       <Footer variant="inline" />

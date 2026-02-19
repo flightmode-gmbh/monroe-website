@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://monroe.zuerich/faq",
   },
+  openGraph: {
+    url: "https://monroe.zuerich/faq",
+    title: "FAQ – Monroe Zürich | Frequently Asked Questions",
+    description:
+      "Find answers to common questions about Monroe Bar Zürich: opening hours, reservations, location, events, accessibility, and more.",
+  },
+  twitter: {
+    title: "FAQ – Monroe Zürich | Frequently Asked Questions",
+    description:
+      "Find answers to common questions about Monroe Bar Zürich: opening hours, reservations, location, events, and more.",
+  },
 }
 
 export default function FaqLayout({

@@ -19,6 +19,32 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://monroe.zuerich/",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_CH",
+    url: "https://monroe.zuerich/",
+    siteName: "Monroe Zürich",
+    title:
+      "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
+    description:
+      "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
+    images: [
+      {
+        url: "https://monroe.zuerich/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Monroe Zürich – Karaoke Bar in Kreis 4, Zürich",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Monroe Zürich – Karaoke Bar, Cocktails & Bites in the Heart of Zürich",
+    description:
+      "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
+    images: ["https://monroe.zuerich/og-image.png"],
+  },
 }
 
 export default function RootLayout({

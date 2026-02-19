@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { Footer } from "@/components/footer"
 import { faqItems } from "./data"
 
@@ -26,7 +27,7 @@ export default function FaqPage() {
               Good to Know
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white">
-              Questions &amp; Answers
+              Frequently Asked Questions
             </h1>
           </div>
 
@@ -78,7 +79,15 @@ export default function FaqPage() {
                   >
                     <div className="overflow-hidden">
                       <p className="px-6 sm:px-8 pb-5 text-sm sm:text-[0.9rem] text-white/55 leading-relaxed">
-                        {item.answer}
+                        {item.answer.includes("our reservations page")
+                          ? <>
+                              {item.answer.split("our reservations page")[0]}
+                              <Link href="/reservations" className="text-[#F0866D] underline underline-offset-2 hover:text-[#59B073] transition-colors">
+                                our reservations page
+                              </Link>
+                              {item.answer.split("our reservations page")[1]}
+                            </>
+                          : item.answer}
                       </p>
                     </div>
                   </div>
