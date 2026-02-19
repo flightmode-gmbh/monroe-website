@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Sing your heart out at Monroe Zürich – the ultimate karaoke bar with craft cocktails, beers and tasty bites, located in the heart of Zürich.",
   manifest: "/manifest.json",
-  themeColor: "#000000",
+  themeColor: "#1a1410",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
