@@ -37,18 +37,25 @@ export default function MenuPage() {
           {/* Menu cards */}
           <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-10 max-w-5xl w-full">
             {/* Front */}
-            <button
-              onClick={() => openLightbox("/docs/menu-front.png")}
-              className="group w-full md:w-1/2 max-w-lg mx-auto cursor-zoom-in
+            <div
+              onClick={() => {
+                if (window.innerWidth >= 768) openLightbox("/docs/menu-front.png")
+              }}
+              className="group w-full md:w-1/2 max-w-lg mx-auto md:cursor-zoom-in
                          md:rotate-[-1.5deg] md:hover:rotate-0
                          transition-all duration-500 ease-out
                          md:hover:scale-[1.03] md:hover:z-10
-                         focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-lg"
+                         rounded-lg"
+              role="button"
+              tabIndex={0}
               aria-label="View drinks menu full screen"
+              onKeyDown={(e) => {
+                if ((e.key === "Enter" || e.key === " ") && window.innerWidth >= 768) openLightbox("/docs/menu-front.png")
+              }}
             >
               <div className="rounded-lg overflow-hidden shadow-2xl shadow-black/50
                               ring-1 ring-white/10
-                              group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)]
+                              md:group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)]
                               transition-shadow duration-500">
                 <Image
                   src="/docs/menu-front.png"
@@ -60,25 +67,32 @@ export default function MenuPage() {
                 />
               </div>
               <p className="mt-4 text-xs uppercase tracking-[0.2em] text-white/35
-                            group-hover:text-white/55 transition-colors duration-300">
+                            md:group-hover:text-white/55 transition-colors duration-300">
                 Drinks &amp; Cocktails
               </p>
-            </button>
+            </div>
 
             {/* Back */}
-            <button
-              onClick={() => openLightbox("/docs/menu-back.png")}
-              className="group w-full md:w-1/2 max-w-lg mx-auto cursor-zoom-in
+            <div
+              onClick={() => {
+                if (window.innerWidth >= 768) openLightbox("/docs/menu-back.png")
+              }}
+              className="group w-full md:w-1/2 max-w-lg mx-auto md:cursor-zoom-in
                          md:rotate-[1.5deg] md:hover:rotate-0
                          transition-all duration-500 ease-out
                          md:hover:scale-[1.03] md:hover:z-10
                          md:mt-8
-                         focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-lg"
+                         rounded-lg"
+              role="button"
+              tabIndex={0}
               aria-label="View shots and wine menu full screen"
+              onKeyDown={(e) => {
+                if ((e.key === "Enter" || e.key === " ") && window.innerWidth >= 768) openLightbox("/docs/menu-back.png")
+              }}
             >
               <div className="rounded-lg overflow-hidden shadow-2xl shadow-black/50
                               ring-1 ring-white/10
-                              group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)]
+                              md:group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)]
                               transition-shadow duration-500">
                 <Image
                   src="/docs/menu-back.png"
@@ -90,10 +104,10 @@ export default function MenuPage() {
                 />
               </div>
               <p className="mt-4 text-xs uppercase tracking-[0.2em] text-white/35
-                            group-hover:text-white/55 transition-colors duration-300">
+                            md:group-hover:text-white/55 transition-colors duration-300">
                 Shots, Wine &amp; Bubbles
               </p>
-            </button>
+            </div>
           </div>
         </div>
       </main>
