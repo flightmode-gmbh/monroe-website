@@ -19,6 +19,10 @@ export const Navigation = () => {
           <li>
             <Link href={"/menu"}>Menu</Link>
           </li>
+          <li className="nav-sep" aria-hidden="true">/</li>
+          <li>
+            <Link href={"/faq"}>FAQ</Link>
+          </li>
         </ul>
         <div className="nav-icons">
           <a
@@ -99,6 +103,11 @@ export const Navigation = () => {
             <li>
               <Link href={"/menu"} onClick={() => setOpen(false)}>
                 Menu
+              </Link>
+            </li>
+            <li>
+              <Link href={"/faq"} onClick={() => setOpen(false)}>
+                FAQ
               </Link>
             </li>
             <li>

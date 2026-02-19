@@ -35,7 +35,7 @@ export default function ReservationLayout({
           url: "https://monroe.zuerich/reservations",
           telephone: "+41 44 123 45 67",
           openingHours: ["Th-Sa 19:00-02:00"],
-          servesCuisine: "Bar food",
+          servesCuisine: "Southern Fried Chicken, Bar Bites",
           acceptsReservations: true,
           sameAs: ["https://www.instagram.com/monroe.zuerich/"],
           potentialAction: {

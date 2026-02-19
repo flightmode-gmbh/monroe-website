@@ -46,7 +46,7 @@ export default function RootLayout({
             url: "https://monroe.zuerich",
             telephone: "+41 44 123 45 67",
             openingHours: ["Th-Sa 19:00-02:00"],
-            servesCuisine: "Bar food",
+            servesCuisine: "Southern Fried Chicken, Bar Bites",
             sameAs: ["https://www.instagram.com/monroe.zuerich/"],
           })}
         </script>

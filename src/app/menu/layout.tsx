@@ -4,7 +4,7 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Monroe Zürich Menu – Cocktails, Drinks & Bites",
   description:
-    "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and delicious bites in the heart of Kreis 4.",
+    "Discover the full menu at Monroe Bar Zürich: expertly crafted cocktails, refreshing drinks, and Southern Fried Chicken by Yardbird — Zürich's original fried chicken restaurant. Located in Kreis 4.",
   alternates: {
     canonical: "https://monroe.zuerich/menu",
   },
@@ -41,7 +41,9 @@ export default function MenuLayout({
             },
             {
               "@type": "MenuSection",
-              name: "Bites",
+              name: "Yardbird Southern Fried Chicken",
+              description:
+                "Food by Yardbird — 100% Swiss-sourced buttermilk fried chicken, double-fried and gluten-free. Available in Classic, Nashville Hot, Buffalo, Seoul, and BBQ styles. Vegetarian and vegan options with Planted\u2122 chicken.",
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",

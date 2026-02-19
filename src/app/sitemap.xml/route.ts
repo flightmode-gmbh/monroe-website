@@ -3,10 +3,9 @@ export function GET() {
   const now = new Date().toISOString()
   const pages = [
     "",
-    // "/reservation",
-    // "/menu",
-    // "/contact",
-    // "/impressum",
+    "/menu",
+    "/reservations",
+    "/faq",
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

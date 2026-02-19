@@ -110,6 +110,76 @@ export default function MenuPage() {
             </div>
           </div>
         </div>
+
+        {/* Yardbird Food Section */}
+        <section className="relative z-10 w-full flex flex-col items-center px-4 pb-16">
+          <div className="w-full max-w-3xl">
+            {/* Divider */}
+            <div className="flex items-center gap-4 mb-10 sm:mb-14">
+              <div className="flex-1 h-px bg-white/10" />
+              <p className="text-sm uppercase tracking-[0.25em] text-white/50 shrink-0">
+                The Food
+              </p>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+
+            {/* Content card */}
+            <div className="backdrop-blur-md bg-black/30 border border-white/10 rounded-2xl overflow-hidden">
+              {/* Image */}
+              <div className="relative w-full aspect-[16/9]">
+                <Image
+                  src="/assets/monroe-yardbird-wings.jpg"
+                  alt="Crispy buttermilk fried chicken wings by Yardbird, served at Monroe Zürich"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 720px"
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </div>
+
+              {/* Text */}
+              <div className="px-6 sm:px-10 py-8 sm:py-10">
+                <p className="text-xs uppercase tracking-[0.2em] text-[#F0866D] mb-3">
+                  Powered by Yardbird
+                </p>
+                <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
+                  Southern Fried Chicken &amp; Bites
+                </h2>
+                <p className="text-sm sm:text-[0.95rem] text-white/60 leading-relaxed mb-4">
+                  Monroe&apos;s food corner is served by{" "}
+                  <a
+                    href="https://yardbird.ch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#F0866D] underline underline-offset-2 hover:text-[#59B073] transition-colors"
+                  >
+                    Yardbird
+                  </a>
+                  , Zürich&apos;s original Southern Fried Chicken restaurant. Their 100% Swiss-sourced
+                  chicken is brined for 24 hours in buttermilk, coated in an aromatic spice mix, and
+                  double-fried to crispy perfection.
+                </p>
+                <p className="text-sm sm:text-[0.95rem] text-white/60 leading-relaxed mb-6">
+                  Choose from signature styles like Classic, Nashville Hot, Buffalo, Seoul, and BBQ — available
+                  as wings or half chicken. Vegetarian and vegan options are available with Planted&trade; chicken,
+                  and the fried chicken is completely gluten-free.
+                </p>
+
+                {/* Highlights */}
+                <div className="flex flex-wrap gap-2">
+                  {["Swiss Chicken", "Gluten-Free", "Vegan Options", "24h Buttermilk Brine"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[0.65rem] uppercase tracking-[0.15em] text-white/40 border border-white/10 rounded-full px-3 py-1.5"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer variant="inline" />
