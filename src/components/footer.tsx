@@ -44,9 +44,39 @@ export const Footer = ({ variant = "overlay" }: FooterProps) => {
           </span>
         </a>
       )}
-      <div className={isInline ? "" : "footer-hours"}>
-        <OpenStatus />
-      </div>
+      {isInline ? (
+        <div className="flex items-center justify-between">
+          <OpenStatus />
+          <p className="text-xs opacity-50 hidden md:block">
+            Designed & developed by{" "}
+            <a
+              href="https://foronered.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80"
+            >
+              For One Red AG
+            </a>
+          </p>
+        </div>
+      ) : (
+        <>
+          <div className="footer-hours">
+            <OpenStatus />
+          </div>
+          <p className="hidden md:block fixed bottom-5 right-6 z-10 text-white text-xs opacity-50">
+            Designed & developed by{" "}
+            <a
+              href="https://foronered.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80"
+            >
+              For One Red AG
+            </a>
+          </p>
+        </>
+      )}
     </footer>
   )
 }

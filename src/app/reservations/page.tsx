@@ -78,7 +78,7 @@ export default function ReservationPage() {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 mb-8 text-center">
             <Link
               href="/menu"
               className="text-sm text-white/50 underline underline-offset-4 hover:text-[#59B073] transition-colors"

@@ -145,6 +145,17 @@ export const Navigation = () => {
             </a>
           </div>
         </div>
+        <p className="absolute bottom-10 text-xs opacity-50 text-white">
+          Designed & developed by{" "}
+          <a
+            href="https://foronered.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80"
+          >
+            For One Red AG
+          </a>
+        </p>
       </div>
     </nav>
   )
